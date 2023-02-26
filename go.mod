@@ -5,8 +5,8 @@ go 1.19
 require (
 	github.com/openshift/oc v0.0.0-alpha.0.0.20221215231219-8bd2abd703f1
 	github.com/spf13/cobra v1.6.1
-	k8s.io/cli-runtime v0.26.0
-	k8s.io/kubectl v0.26.0
+	k8s.io/cli-runtime v0.25.2
+	k8s.io/kubectl v0.25.2
 )
 
 require (
@@ -49,7 +49,7 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/russross/blackfriday v1.6.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/xlab/treeprint v1.1.0 // indirect
 	go.starlark.net v0.0.0-20221205180719-3fd0dac74452 // indirect
@@ -64,10 +64,10 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.26.0 // indirect
-	k8s.io/apimachinery v0.26.0 // indirect
-	k8s.io/client-go v0.26.0 // indirect
-	k8s.io/component-base v0.26.0 // indirect
+	k8s.io/api v0.25.2 // indirect
+	k8s.io/apimachinery v0.25.2 // indirect
+	k8s.io/client-go v0.25.2 // indirect
+	k8s.io/component-base v0.25.2 // indirect
 	k8s.io/klog/v2 v2.80.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20221207184640-f3cff1453715 // indirect
 	k8s.io/utils v0.0.0-20221128185143-99ec85e7a448 // indirect
