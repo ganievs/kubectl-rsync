@@ -1,12 +1,12 @@
 package main
 
 import (
+	kcmdutil "k8s.io/kubectl/pkg/cmd/util"
 	"kubectl-rsync/pkg/cmd"
-	"os"
 )
 
 func main() {
 	if err := cmd.RootCmd().Execute(); err != nil {
-		os.Exit(1)
+		kcmdutil.CheckErr(err)
 	}
 }
