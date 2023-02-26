@@ -2,8 +2,11 @@ package main
 
 import (
 	"kubectl-rsync/pkg/cmd"
+	"os"
 )
 
 func main() {
-	cmd.RootCmd().Execute()
+	if err := cmd.RootCmd().Execute(); err != nil {
+		os.Exit(1)
+	}
 }
