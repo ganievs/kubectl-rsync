@@ -18,9 +18,9 @@ func RootCmd() *cobra.Command {
 		ErrOut: os.Stderr,
 	}
 
-	rsyncCmd := rsync.NewCmdRsync(f, ioStreams)
+	cmd := rsync.NewCmdRsync(f, ioStreams)
 
-	kubeConfigFlags.AddFlags(rsyncCmd.PersistentFlags())
+	kubeConfigFlags.AddFlags(cmd.PersistentFlags())
 
-	return rsyncCmd
+	return cmd
 }
