@@ -32,7 +32,7 @@ type rsyncStrategy struct {
 // DefaultRsyncRemoteShellToUse generates an command to create a remote shell.
 func DefaultRsyncRemoteShellToUse(cmd *cobra.Command) string {
 	// find the rsh command in the direct command path
-	rshCmd := cmdutil.SiblingOrNiblingCommand(cmd, "rsh")
+	rshCmd := cmdutil.SiblingOrNiblingCommand(cmd, "exec")
 	// do not add local flags, unless also rsh flags to the command
 	localFlags := sets.NewString()
 	cmd.LocalFlags().VisitAll(func(flag *pflag.Flag) {
